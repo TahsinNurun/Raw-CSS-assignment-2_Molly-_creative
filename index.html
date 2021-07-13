@@ -48,12 +48,44 @@
             </h4>
             <button class="btn btn_text">GET STARTED</button>
             <div>
-                <button></button>
-                <button></button>
-                <button></button>
+                <button class="slider_btn sl_1"></button>
+                <button class="slider_btn sl_2"></button>
+                <button class="slider_btn sl_3"></button>
             </div>
         </div>
     </section>
+    
+    <!-- code for creating slider -->
+<!-- 
+    <section>
+        <div class="slider_container">
+
+            <div class="slide">
+                <img src="/Images/bg.png" class= "slide_img" alt="">
+                <h1>slide 1</h1>
+            </div>
+            <div class="slide">
+                <img src="/Images/3bg.png" class= "slide_img" alt="">
+                <h1>slide 3</h1>
+            </div>
+            <div class="slide">
+                <img src="/Images/2bg.png" class= "slide_img" alt="">
+                <h1>slide 2</h1>
+            </div>
+               
+        </div>
+        <div class="btn_container">
+            <button type ="button" class="prevBtn">
+                prev
+            </button>
+            <button type ="button" class="nextBtn">
+             next
+             </button>
+            </div>
+
+    </section> -->
+
+
 
     <!-- service-detail -->
     <section class="service_section">
@@ -137,24 +169,24 @@
         </div>
         <div class="port_btn">
             <button class="port_btn_style">ALL</button>
-            <button class="port_btn_style">WEB DESIGN</button>
-            <button class="port_btn_style">GRAPHIC DESIGN</button>
-            <button class="port_btn_style">PHOTOGRAPHY</button>
-            <button class="port_btn_style">APPS</button>
+            <button class="port_btn_style" onclick="loadThreeGraphicImage(3)" >WEB DESIGN</button>
+            <button class="port_btn_style" onclick="loadThreeImage(3)">GRAPHIC DESIGN</button>
+            <button class="port_btn_style" onclick="loadThreeGraphicImage(3)">PHOTOGRAPHY</button>
+            <button class="port_btn_style" onclick="loadThreeImage(3)">APPS</button>
         </div>
-        <div class="port_content main_container">
-            <img class="port_img" src="Images/portfolioIMG.png" width="30%" height="auto" alt="">
-            <img class="port_img" src="Images/portfolioIMG.png" width="30%" height="auto" alt="">
-            <img class="port_img" src="Images/portfolioIMG.png" width="30%" height="auto" alt="">
-            <img class="port_img" src="Images/portfolioIMG.png" width="30%" height="auto" alt="">
-            <img class="port_img" src="Images/portfolioIMG.png" width="30%" height="auto" alt="">
-            <img class="port_img" src="Images/portfolioIMG.png" width="30%" height="auto" alt="">
-            <img class="port_img" src="Images/portfolioIMG.png" width="30%" height="auto" alt="">
-            <img class="port_img" src="Images/portfolioIMG.png" width="30%" height="auto" alt="">
-            <img class="port_img" src="Images/portfolioIMG.png" width="30%" height="auto" alt="">
+        <div class="port_content main_container" id="new_img">
+            <img class="port_img" src="Images/portfolioIMG1.png" width="30%" height="auto" alt="">
+            <img class="port_img" src="Images/portfolioIMG1.png" width="30%" height="auto" alt="">
+            <img class="port_img" src="Images/portfolioIMG1.png" width="30%" height="auto" alt="">
+            <img class="port_img web" src="Images/portfolioIMG2.png" width="30%" height="auto" alt="">
+            <img class="port_img  web" src="Images/portfolioIMG2.png" width="30%" height="auto" alt="">
+            <img class="port_img web" src="Images/portfolioIMG2.png" width="30%" height="auto" alt="">
+            <img class="port_img graphic" src="Images/portfolioIMG3.png" width="30%" height="auto" alt="">
+            <img class="port_img graphic" src="Images/portfolioIMG3.png" width="30%" height="auto" alt="">
+            <img class="port_img graphic" src="Images/portfolioIMG3.png" width="30%" height="auto" alt="">
         </div>
         <div class="port_btn">
-            <button class="port_btn_style">SHOW MORE</button>
+            <button class="port_btn_style" onclick="addMoreImg()">SHOW MORE</button>
         </div>
 
         <div class="ser_list_after_bg">
@@ -165,7 +197,7 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
-                <div class="ser_list_after_left">
+                <div class="ser_list_after_right">
                     <h2 class="gray_sub_title">WE MAKE WEB DESIGN</h2>
                     <h4 class="white_text_left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
                         perferendis
@@ -280,31 +312,32 @@
             <h4 class="gen_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium earum pariatur
                 vitae ducimus. Veritatis adipisci, eaque eos id reprehenderit ducimus?</h4>
         </div>
+
         <div class="blog_content main_container">
             <div class="blog_card">
                 <img class="bl_img" src="Images/blogImg2.png" width="100%" height="auto" margin="auto" alt="">
-                <div class="bl_des">
+                <div class="bl_des"  >
                     <h3 class="orange_sub_title">ABOUT COMPANY</h3>
                     <h4 class="gen_text_left">published at <span style="color:rgb(245, 161, 52)">3rd june,2021</span>
                     </h4>
-                    <h5 class="gen_text_left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias nam eaque
-                        maiores odit consectetur numquam nisi accusantium vel, pariatur saepe officia dolore nemo
-                        consequatur quibusdam rerum consequuntur quo et veritatis.
+                    <h5 class="gen_text_left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sed quibusdam saepe delectus labore error distinctio dolore mollitia, 
+                        <span class ="three_dots" >...</span>
+                        <span class="more_blog_text">pariatur tenetur, sapiente iste incidunt assumenda nam et qui voluptatum natus quos repudiandae, unde magni soluta accusamus! Iste facere necessitatibus autem soluta voluptas quas vel similique consequuntur, odio dolore recusandae repudiandae velit, hic earum provident eos officiis atque, assumenda totam ipsam impedit ut nam aspernatur commodi. Ipsa recusandae nulla magni atque consectetur!</span>
                     </h5>
-                    <h4 class="gen_text_orange_right">Read More ...</h4>
+                    <button class="read_more_btn">Read more</button>
                 </div>
             </div>
             <div class="blog_card">
                 <img class="bl_img" src="Images/blogImg2.png" width="100%" height="auto" margin="auto" alt="">
-                <div class="bl_des">
+                <div class="bl_des"  >
                     <h3 class="orange_sub_title">ABOUT COMPANY</h3>
                     <h4 class="gen_text_left">published at <span style="color:rgb(245, 161, 52)">3rd june,2021</span>
                     </h4>
-                    <h5 class="gen_text_left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias nam eaque
-                        maiores odit consectetur numquam nisi accusantium vel, pariatur saepe officia dolore nemo
-                        consequatur quibusdam rerum consequuntur quo et veritatis.
+                    <h5 class="gen_text_left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sed quibusdam saepe delectus labore error distinctio dolore mollitia, 
+                        <span class ="three_dots" >...</span>
+                        <span class="more_blog_text">pariatur tenetur, sapiente iste incidunt assumenda nam et qui voluptatum natus quos repudiandae, unde magni soluta accusamus! Iste facere necessitatibus autem soluta voluptas quas vel similique consequuntur, odio dolore recusandae repudiandae velit, hic earum provident eos officiis atque, assumenda totam ipsam impedit ut nam aspernatur commodi. Ipsa recusandae nulla magni atque consectetur!</span>
                     </h5>
-                    <h4 class="gen_text_orange_right">Read More ...</h4>
+                    <button class="read_more_btn">Read more</button>
                 </div>
             </div>
         </div>
@@ -316,11 +349,10 @@
                     <h3 class="orange_sub_title">ABOUT COMPANY</h3>
                     <h4 class="gen_text_left">published at <span style="color:rgb(245, 161, 52)">3rd june,2021</span>
                     </h4>
-                    <h5 class="gen_text_left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias nam eaque
-                        maiores odit consectetur numquam nisi accusantium vel, pariatur saepe officia dolore nemo
-                        consequatur quibusdam rerum consequuntur quo et veritatis.
+                    <h5 class="gen_text_left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sed quibusdam saepe delectus labore error distinctio dolore mollitia, 
+                        <span class ="read_more_btn" style="color:rgb(245, 161, 52); font-weight:bold; display:block;text-align:right">Read More ...</span>
+                        <span class="more_blog_text">pariatur tenetur, sapiente iste incidunt assumenda nam et qui voluptatum natus quos repudiandae, unde magni soluta accusamus! Iste facere necessitatibus autem soluta voluptas quas vel similique consequuntur, odio dolore recusandae repudiandae velit, hic earum provident eos officiis atque, assumenda totam ipsam impedit ut nam aspernatur commodi. Ipsa recusandae nulla magni atque consectetur!</span>
                     </h5>
-                    <h4 class="gen_text_orange_right">Read More ...</h4>
                 </div>
             </div>
             <div class="blog_card">
@@ -329,11 +361,10 @@
                     <h3 class="orange_sub_title">ABOUT COMPANY</h3>
                     <h4 class="gen_text_left">published at <span style="color:rgb(245, 161, 52)">3rd june,2021</span>
                     </h4>
-                    <h5 class="gen_text_left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias nam eaque
-                        maiores odit consectetur numquam nisi accusantium vel, pariatur saepe officia dolore nemo
-                        consequatur quibusdam rerum consequuntur quo et veritatis.
+                    <h5 class="gen_text_left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sed quibusdam saepe delectus labore error distinctio dolore mollitia, 
+                        <span class ="read_more_btn" style="color:rgb(245, 161, 52); font-weight:bold; display:block;text-align:right">Read More ...</span>
+                        <span class="more_blog_text">pariatur tenetur, sapiente iste incidunt assumenda nam et qui voluptatum natus quos repudiandae, unde magni soluta accusamus! Iste facere necessitatibus autem soluta voluptas quas vel similique consequuntur, odio dolore recusandae repudiandae velit, hic earum provident eos officiis atque, assumenda totam ipsam impedit ut nam aspernatur commodi. Ipsa recusandae nulla magni atque consectetur!</span>
                     </h5>
-                    <h4 class="gen_text_orange_right">Read More ...</h4>
                 </div>
             </div>
             <div class="blog_card">
@@ -342,17 +373,61 @@
                     <h3 class="orange_sub_title">ABOUT COMPANY</h3>
                     <h4 class="gen_text_left">published at <span style="color:rgb(245, 161, 52)">3rd june,2021</span>
                     </h4>
-                    <h5 class="gen_text_left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias nam eaque
-                        maiores odit consectetur numquam nisi accusantium vel, pariatur saepe officia dolore nemo
-                        consequatur quibusdam rerum consequuntur quo et veritatis.
+                    <h5 class="gen_text_left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sed quibusdam saepe delectus labore error distinctio dolore mollitia, 
+                        <span class ="read_more_btn" style="color:rgb(245, 161, 52); font-weight:bold; display:block;text-align:right">Read More ...</span>
+                        <span class="more_blog_text">pariatur tenetur, sapiente iste incidunt assumenda nam et qui voluptatum natus quos repudiandae, unde magni soluta accusamus! Iste facere necessitatibus autem soluta voluptas quas vel similique consequuntur, odio dolore recusandae repudiandae velit, hic earum provident eos officiis atque, assumenda totam ipsam impedit ut nam aspernatur commodi. Ipsa recusandae nulla magni atque consectetur!</span>
                     </h5>
-                    <h4 class="gen_text_orange_right">Read More ...</h4>
                 </div>
             </div>
         </div>
-        <div class="port_btn">
+        <div class="port_btn" id="load_more_blog">
             <button class="port_btn_style">SEARCH MORE</button>
         </div>
+        <!-- blog item to be showed when button is clicked -->
+        <section id="more_blog">
+            <div class="blog_content main_container">
+                <div class="blog_card">
+                    <img class="bl_img" src="Images/blogImg2.png" width="100%" height="auto" margin="auto" alt="">
+                    <div class="bl_des">
+                        <h3 class="orange_sub_title">ABOUT COMPANY</h3>
+                        <h4 class="gen_text_left">published at <span style="color:rgb(245, 161, 52)">3rd june,2021</span>
+                        </h4>
+                        <h5 class="gen_text_left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sed quibusdam saepe delectus labore error distinctio dolore mollitia, 
+                            <span class ="read_more_btn" style="color:rgb(245, 161, 52); font-weight:bold; display:block;text-align:right">Read More ...</span>
+                            <span class="more_blog_text">pariatur tenetur, sapiente iste incidunt assumenda nam et qui voluptatum natus quos repudiandae, unde magni soluta accusamus! Iste facere necessitatibus autem soluta voluptas quas vel similique consequuntur, odio dolore recusandae repudiandae velit, hic earum provident eos officiis atque, assumenda totam ipsam impedit ut nam aspernatur commodi. Ipsa recusandae nulla magni atque consectetur!</span>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="blog_card">
+                    <img class="bl_img" src="Images/blogImg2.png" width="100%" height="auto" margin="auto" alt="">
+                    <div class="bl_des">
+                        <h3 class="orange_sub_title">ABOUT COMPANY</h3>
+                        <h4 class="gen_text_left">published at <span style="color:rgb(245, 161, 52)">3rd june,2021</span>
+                        </h4>
+                        <h5 class="gen_text_left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sed quibusdam saepe delectus labore error distinctio dolore mollitia, 
+                            <span class ="read_more_btn" style="color:rgb(245, 161, 52); font-weight:bold; display:block;text-align:right">Read More ...</span>
+                            <span class="more_blog_text">pariatur tenetur, sapiente iste incidunt assumenda nam et qui voluptatum natus quos repudiandae, unde magni soluta accusamus! Iste facere necessitatibus autem soluta voluptas quas vel similique consequuntur, odio dolore recusandae repudiandae velit, hic earum provident eos officiis atque, assumenda totam ipsam impedit ut nam aspernatur commodi. Ipsa recusandae nulla magni atque consectetur!</span>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="blog_card">
+                    <img class="bl_img" src="Images/blogImg2.png" width="100%" height="auto" margin="auto" alt="">
+                    <div class="bl_des">
+                        <h3 class="orange_sub_title">ABOUT COMPANY</h3>
+                        <h4 class="gen_text_left">published at <span style="color:rgb(245, 161, 52)">3rd june,2021</span>
+                        </h4>
+                        <h5 class="gen_text_left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sed quibusdam saepe delectus labore error distinctio dolore mollitia, 
+                            <span class ="read_more_btn" style="color:rgb(245, 161, 52); font-weight:bold; display:block;text-align:right">Read More ...</span>
+                            <span class="more_blog_text">pariatur tenetur, sapiente iste incidunt assumenda nam et qui voluptatum natus quos repudiandae, unde magni soluta accusamus! Iste facere necessitatibus autem soluta voluptas quas vel similique consequuntur, odio dolore recusandae repudiandae velit, hic earum provident eos officiis atque, assumenda totam ipsam impedit ut nam aspernatur commodi. Ipsa recusandae nulla magni atque consectetur!</span>
+                        </h5>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     </section>
 
     <!--contact -->
@@ -415,7 +490,7 @@
     </section>
 
 
-
+    <script src="index.js"></script>
 
 </body>
 
