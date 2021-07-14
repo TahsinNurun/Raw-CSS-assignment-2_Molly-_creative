@@ -1,15 +1,35 @@
+// responsive hamburger menu code
+var menu = document.querySelector(".menu");
+var ham = document.querySelector(".ham");
+var xIcon = document.querySelector(".x_Icon");
+var menuIcon = document.querySelector(".menu_Icon");
+
+ham.addEventListener("click",toggleMenu);
+
+menu.classList.contains("showResMenu");
+
+function toggleMenu(){
+   
+    if(menu.classList.contains("showResMenu")){
+        menu.classList.remove("showResMenu");
+        xIcon.style.display = "none";
+        menuIcon.style.display="block";
+    }else{
+        menu.classList.add("showResMenu");
+        xIcon.style.display = "block";
+        menuIcon.style.display="none";
+    }
+}
+
+var menuLinks = document.querySelectorAll(".nav_item_res");
+console.log(menuLinks);
+menuLinks.forEach(function(menuLink){
+    menuLink.addEventListener("click", toggleMenu)
+})
+
 
 // Code for loading more blog text
 
-
-// document.getElementsByClassName("read_more_btn")[0].addEventListener("click", function () {
-//     var readMoreBtn = document.querySelector(".read_more_btn");
-//     readMoreBtn.style.display = "none";
-//     var dots = document.querySelector(".three_dots");
-//     dots.style.display = "none";
-//     var showMoreText = document.querySelector(".more_blog_text");
-//     showMoreText.style.display = "block";
-// })
 
 function loadMoreText() {
     
@@ -71,7 +91,7 @@ function addMoreImg() {
     imgContainer.append(newImg, newImg1, newImg2);
 }
 
-function loadThreeImage(x) {
+function loadAllImage(x) {
     var div = document.getElementById("new_img");
     div.innerHTML = ""; // clear images
 
@@ -85,19 +105,20 @@ function loadThreeImage(x) {
     }
 }
 
-function loadThreeGraphicImage(x) {
+function loadThreeImage(x) {
     var div = document.getElementById("new_img");
     div.innerHTML = ""; // clear images
 
-    for (counter = 1; counter <= x; counter++) {
-        var imagem = document.createElement("img");
-        imagem.src = "Images/graphic" + counter + ".png";
-        imagem.style.width = "30%";
-        imagem.style.height = "30%";
-        imagem.classList.add("port_img");
-        div.appendChild(imagem);
+    for (counter = x-2 ; counter <= x; counter++) {
+        var image = document.createElement("img");
+        image.src = "Images/portfolioIMG" + counter + ".png";
+        image.style.width = "30%";
+        image.style.height = "30%";
+        image.classList.add("port_img");
+        div.appendChild(image);
     }
 }
+
 
 
 // TopBanner slider change code
