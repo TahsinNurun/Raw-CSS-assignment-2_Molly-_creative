@@ -37,27 +37,72 @@
     </section>
 
     <!-- top-banner -->
-    <section class="top_banner_bg">
-        <div class="top_banner main_container">
-            <h2 class="ban_text">Hello we are <span style="color:rgb(245, 161, 52)">Maxima</span> and we create</h2>
-            <h1 class="max_title">BRANDS</h1>
-            <h4 class="ban_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam architecto harum, sunt
-                expedita fuga a ipsam dolore nulla ex ut consequuntur itaque voluptate quisquam est aspernatur, voluptas
-                eveniet, vero rem! Nesciunt repellat fuga consequatur deserunt numquam! Aut sint cupiditate minima sunt
-                blanditiis eum deleniti recusandae ab architecto, velit, temporibus aspernatur..
-            </h4>
-            <button class="btn btn_text">GET STARTED</button>
-            <div>
-                <button class="slider_btn sl_1"></button>
-                <button class="slider_btn sl_2"></button>
-                <button class="slider_btn sl_3"></button>
+    <div id="slider0">
+        <section id="top_banner_bg_0">
+            <div class="top_banner main_container">
+                <h2 class="ban_text">Hello we are <span style="color:rgb(245, 161, 52)">Maxima</span> and we create</h2>
+                <h1 class="max_title">BRANDS</h1>
+                <h4 class="ban_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam architecto harum, sunt
+                    expedita fuga a ipsam dolore nulla ex ut consequuntur itaque voluptate quisquam est aspernatur, voluptas
+                    eveniet, vero rem! Nesciunt repellat fuga consequatur deserunt numquam! Aut sint cupiditate minima sunt
+                    blanditiis eum deleniti recusandae ab architecto, velit, temporibus aspernatur..
+                </h4>
+                <button class="btn btn_text">GET STARTED</button>
+                <div>
+                    <button class="slider_btn"  onclick="showSlider0()"></button>
+                    <button class="slider_btn" onclick="showSlider1()"></button>
+                    <button class="slider_btn"  onclick="showSlider2()"></button>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
+
+    <div id = "slider1">
+        <section id="top_banner_bg_1">
+            <div class="top_banner main_container">
+                <h2 class="ban_text">Hello we are <span style="color:rgb(245, 161, 52)">Maxima</span> and we create</h2>
+                <h1 class="max_title"><span style="color:rgb(245, 161, 52)">CREATE</span></h1>
+                <h4 class="ban_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam architecto harum, sunt
+                    expedita fuga a ipsam dolore nulla ex ut consequuntur itaque voluptate quisquam est aspernatur, voluptas
+                    eveniet, vero rem! Nesciunt repellat fuga consequatur deserunt numquam! Aut sint cupiditate minima sunt
+                    blanditiis eum deleniti recusandae ab architecto, velit, temporibus aspernatur..
+                </h4>
+                <button class="btn btn_text">BOOK A MEETING</button>
+                <div>
+                    <button class="slider_btn"  onclick="showSlider0()"></button>
+                    <button class="slider_btn" onclick="showSlider1()"></button>
+                    <button class="slider_btn"  onclick="showSlider2()"></button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id = "slider2">
+        <section id="top_banner_bg_2">
+            <div class="top_banner main_container">
+                <h2 class="ban_text">Hello we are <span style="color:rgb(245, 161, 52)">Maxima</span> and we create</h2>
+                <h1 class="max_title">IMPACT</h1>
+                <h4 class="ban_text"><span style="color:rgb(245, 161, 52)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam architecto harum, sunt
+                    expedita fuga a ipsam dolore nulla ex ut consequuntur itaque voluptate quisquam est aspernatur, voluptas
+                    eveniet, vero rem! Nesciunt repellat fuga consequatur deserunt numquam! Aut sint cupiditate minima sunt
+                    blanditiis eum deleniti recusandae ab architecto, velit, temporibus aspernatur..</span>
+                </h4>
+                <button class="btn btn_text">BOOK A MEETING</button>
+                <div>
+                    <button class="slider_btn"  onclick="showSlider0()"></button>
+                    <button class="slider_btn" onclick="showSlider1()"></button>
+                    <button class="slider_btn"  onclick="showSlider2()"></button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
     
     <!-- code for creating slider -->
-<!-- 
-    <section>
+
+    <!-- <section>
         <div class="slider_container">
 
             <div class="slide">
@@ -322,9 +367,10 @@
                     </h4>
                     <h5 class="gen_text_left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sed quibusdam saepe delectus labore error distinctio dolore mollitia, 
                         <span class ="three_dots" >...</span>
-                        <span class="more_blog_text">pariatur tenetur, sapiente iste incidunt assumenda nam et qui voluptatum natus quos repudiandae, unde magni soluta accusamus! Iste facere necessitatibus autem soluta voluptas quas vel similique consequuntur, odio dolore recusandae repudiandae velit, hic earum provident eos officiis atque, assumenda totam ipsam impedit ut nam aspernatur commodi. Ipsa recusandae nulla magni atque consectetur!</span>
+                        <span class="more_blog_text"
+                        id="more_blog_text_0">pariatur tenetur, sapiente iste incidunt assumenda nam et qui voluptatum natus quos repudiandae, unde magni soluta accusamus! Iste facere necessitatibus autem soluta voluptas quas vel similique consequuntur, odio dolore recusandae repudiandae velit, hic earum provident eos officiis atque, assumenda totam ipsam impedit ut nam aspernatur commodi. Ipsa recusandae nulla magni atque consectetur!</span>
                     </h5>
-                    <button class="read_more_btn">Read more</button>
+                    <button class="read_more_btn" id="id_read_more_btn_0" onclick ="loadMoreText()">Read more</button>
                 </div>
             </div>
             <div class="blog_card">
@@ -335,9 +381,9 @@
                     </h4>
                     <h5 class="gen_text_left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sed quibusdam saepe delectus labore error distinctio dolore mollitia, 
                         <span class ="three_dots" >...</span>
-                        <span class="more_blog_text">pariatur tenetur, sapiente iste incidunt assumenda nam et qui voluptatum natus quos repudiandae, unde magni soluta accusamus! Iste facere necessitatibus autem soluta voluptas quas vel similique consequuntur, odio dolore recusandae repudiandae velit, hic earum provident eos officiis atque, assumenda totam ipsam impedit ut nam aspernatur commodi. Ipsa recusandae nulla magni atque consectetur!</span>
+                        <span class="more_blog_text" id="more_blog_text_1">pariatur tenetur, sapiente iste incidunt assumenda nam et qui voluptatum natus quos repudiandae, unde magni soluta accusamus! Iste facere necessitatibus autem soluta voluptas quas vel similique consequuntur, odio dolore recusandae repudiandae velit, hic earum provident eos officiis atque, assumenda totam ipsam impedit ut nam aspernatur commodi. Ipsa recusandae nulla magni atque consectetur!</span>
                     </h5>
-                    <button class="read_more_btn">Read more</button>
+                    <button class="read_more_btn" id="id_read_more_btn_1" onclick ="loadMoreText()">Read more</button>
                 </div>
             </div>
         </div>
@@ -350,9 +396,10 @@
                     <h4 class="gen_text_left">published at <span style="color:rgb(245, 161, 52)">3rd june,2021</span>
                     </h4>
                     <h5 class="gen_text_left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sed quibusdam saepe delectus labore error distinctio dolore mollitia, 
-                        <span class ="read_more_btn" style="color:rgb(245, 161, 52); font-weight:bold; display:block;text-align:right">Read More ...</span>
-                        <span class="more_blog_text">pariatur tenetur, sapiente iste incidunt assumenda nam et qui voluptatum natus quos repudiandae, unde magni soluta accusamus! Iste facere necessitatibus autem soluta voluptas quas vel similique consequuntur, odio dolore recusandae repudiandae velit, hic earum provident eos officiis atque, assumenda totam ipsam impedit ut nam aspernatur commodi. Ipsa recusandae nulla magni atque consectetur!</span>
+                        <span class ="three_dots" >...</span>
+                        <span class="more_blog_text" id="more_blog_text_2">pariatur tenetur, sapiente iste incidunt assumenda nam et qui voluptatum natus quos repudiandae, unde magni soluta accusamus! Iste facere necessitatibus autem soluta voluptas quas vel similique consequuntur, odio dolore recusandae repudiandae velit, hic earum provident eos officiis atque, assumenda totam ipsam impedit ut nam aspernatur commodi. Ipsa recusandae nulla magni atque consectetur!</span>
                     </h5>
+                    <button class="read_more_btn" id="id_read_more_btn_2" onclick ="loadMoreText()">Read more</button>
                 </div>
             </div>
             <div class="blog_card">
@@ -362,9 +409,10 @@
                     <h4 class="gen_text_left">published at <span style="color:rgb(245, 161, 52)">3rd june,2021</span>
                     </h4>
                     <h5 class="gen_text_left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sed quibusdam saepe delectus labore error distinctio dolore mollitia, 
-                        <span class ="read_more_btn" style="color:rgb(245, 161, 52); font-weight:bold; display:block;text-align:right">Read More ...</span>
-                        <span class="more_blog_text">pariatur tenetur, sapiente iste incidunt assumenda nam et qui voluptatum natus quos repudiandae, unde magni soluta accusamus! Iste facere necessitatibus autem soluta voluptas quas vel similique consequuntur, odio dolore recusandae repudiandae velit, hic earum provident eos officiis atque, assumenda totam ipsam impedit ut nam aspernatur commodi. Ipsa recusandae nulla magni atque consectetur!</span>
+                        <span class ="three_dots" >...</span>
+                        <span class="more_blog_text" id="more_blog_text_3">pariatur tenetur, sapiente iste incidunt assumenda nam et qui voluptatum natus quos repudiandae, unde magni soluta accusamus! Iste facere necessitatibus autem soluta voluptas quas vel similique consequuntur, odio dolore recusandae repudiandae velit, hic earum provident eos officiis atque, assumenda totam ipsam impedit ut nam aspernatur commodi. Ipsa recusandae nulla magni atque consectetur!</span>
                     </h5>
+                    <button class="read_more_btn" id="id_read_more_btn_3" onclick ="loadMoreText()">Read more</button>
                 </div>
             </div>
             <div class="blog_card">
@@ -374,9 +422,10 @@
                     <h4 class="gen_text_left">published at <span style="color:rgb(245, 161, 52)">3rd june,2021</span>
                     </h4>
                     <h5 class="gen_text_left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sed quibusdam saepe delectus labore error distinctio dolore mollitia, 
-                        <span class ="read_more_btn" style="color:rgb(245, 161, 52); font-weight:bold; display:block;text-align:right">Read More ...</span>
-                        <span class="more_blog_text">pariatur tenetur, sapiente iste incidunt assumenda nam et qui voluptatum natus quos repudiandae, unde magni soluta accusamus! Iste facere necessitatibus autem soluta voluptas quas vel similique consequuntur, odio dolore recusandae repudiandae velit, hic earum provident eos officiis atque, assumenda totam ipsam impedit ut nam aspernatur commodi. Ipsa recusandae nulla magni atque consectetur!</span>
+                        <span class ="three_dots" >...</span>
+                        <span class="more_blog_text" id="more_blog_text_4">pariatur tenetur, sapiente iste incidunt assumenda nam et qui voluptatum natus quos repudiandae, unde magni soluta accusamus! Iste facere necessitatibus autem soluta voluptas quas vel similique consequuntur, odio dolore recusandae repudiandae velit, hic earum provident eos officiis atque, assumenda totam ipsam impedit ut nam aspernatur commodi. Ipsa recusandae nulla magni atque consectetur!</span>
                     </h5>
+                    <button class="read_more_btn" id="id_read_more_btn_4" onclick ="loadMoreText()">Read more</button>
                 </div>
             </div>
         </div>
@@ -393,10 +442,10 @@
                         <h4 class="gen_text_left">published at <span style="color:rgb(245, 161, 52)">3rd june,2021</span>
                         </h4>
                         <h5 class="gen_text_left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sed quibusdam saepe delectus labore error distinctio dolore mollitia, 
-                            <span class ="read_more_btn" style="color:rgb(245, 161, 52); font-weight:bold; display:block;text-align:right">Read More ...</span>
-                            <span class="more_blog_text">pariatur tenetur, sapiente iste incidunt assumenda nam et qui voluptatum natus quos repudiandae, unde magni soluta accusamus! Iste facere necessitatibus autem soluta voluptas quas vel similique consequuntur, odio dolore recusandae repudiandae velit, hic earum provident eos officiis atque, assumenda totam ipsam impedit ut nam aspernatur commodi. Ipsa recusandae nulla magni atque consectetur!</span>
+                            <span class ="three_dots" >...</span>
+                            <span class="more_blog_text" id="more_blog_text_5">pariatur tenetur, sapiente iste incidunt assumenda nam et qui voluptatum natus quos repudiandae, unde magni soluta accusamus! Iste facere necessitatibus autem soluta voluptas quas vel similique consequuntur, odio dolore recusandae repudiandae velit, hic earum provident eos officiis atque, assumenda totam ipsam impedit ut nam aspernatur commodi. Ipsa recusandae nulla magni atque consectetur!</span>
                         </h5>
-                        
+                        <button class="read_more_btn" id="id_read_more_btn_5" onclick ="loadMoreText()">Read more</button>
                     </div>
                 </div>
                 <div class="blog_card">
@@ -406,10 +455,10 @@
                         <h4 class="gen_text_left">published at <span style="color:rgb(245, 161, 52)">3rd june,2021</span>
                         </h4>
                         <h5 class="gen_text_left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sed quibusdam saepe delectus labore error distinctio dolore mollitia, 
-                            <span class ="read_more_btn" style="color:rgb(245, 161, 52); font-weight:bold; display:block;text-align:right">Read More ...</span>
-                            <span class="more_blog_text">pariatur tenetur, sapiente iste incidunt assumenda nam et qui voluptatum natus quos repudiandae, unde magni soluta accusamus! Iste facere necessitatibus autem soluta voluptas quas vel similique consequuntur, odio dolore recusandae repudiandae velit, hic earum provident eos officiis atque, assumenda totam ipsam impedit ut nam aspernatur commodi. Ipsa recusandae nulla magni atque consectetur!</span>
+                            <span class ="three_dots" >...</span>
+                            <span class="more_blog_text" id="more_blog_text_6">pariatur tenetur, sapiente iste incidunt assumenda nam et qui voluptatum natus quos repudiandae, unde magni soluta accusamus! Iste facere necessitatibus autem soluta voluptas quas vel similique consequuntur, odio dolore recusandae repudiandae velit, hic earum provident eos officiis atque, assumenda totam ipsam impedit ut nam aspernatur commodi. Ipsa recusandae nulla magni atque consectetur!</span>
                         </h5>
-                        
+                        <button class="read_more_btn" id="id_read_more_btn_6" onclick ="loadMoreText()">Read more</button>
                     </div>
                 </div>
                 <div class="blog_card">
@@ -419,10 +468,10 @@
                         <h4 class="gen_text_left">published at <span style="color:rgb(245, 161, 52)">3rd june,2021</span>
                         </h4>
                         <h5 class="gen_text_left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sed quibusdam saepe delectus labore error distinctio dolore mollitia, 
-                            <span class ="read_more_btn" style="color:rgb(245, 161, 52); font-weight:bold; display:block;text-align:right">Read More ...</span>
-                            <span class="more_blog_text">pariatur tenetur, sapiente iste incidunt assumenda nam et qui voluptatum natus quos repudiandae, unde magni soluta accusamus! Iste facere necessitatibus autem soluta voluptas quas vel similique consequuntur, odio dolore recusandae repudiandae velit, hic earum provident eos officiis atque, assumenda totam ipsam impedit ut nam aspernatur commodi. Ipsa recusandae nulla magni atque consectetur!</span>
+                            <span class ="three_dots" >...</span>
+                            <span class="more_blog_text" id="more_blog_text_7">pariatur tenetur, sapiente iste incidunt assumenda nam et qui voluptatum natus quos repudiandae, unde magni soluta accusamus! Iste facere necessitatibus autem soluta voluptas quas vel similique consequuntur, odio dolore recusandae repudiandae velit, hic earum provident eos officiis atque, assumenda totam ipsam impedit ut nam aspernatur commodi. Ipsa recusandae nulla magni atque consectetur!</span>
                         </h5>
-                        
+                        <button class="read_more_btn" id="id_read_more_btn_7" onclick ="loadMoreText()">Read more</button> 
                     </div>
                 </div>
             </div>
