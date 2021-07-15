@@ -160,8 +160,14 @@
     padding: 3rem;
     display: flex;
     align-items: center;
+    animation-name: drive;
+    animation-duration: 1s;
 }
 
+@keyframes drive {
+    from {transform: translateX(100%)}
+    to {transform: translateX(0px)}
+}
 #top_banner_bg_1{
     background-image: url('../Images/1bg.png');
     background-repeat: no-repeat; 
@@ -171,7 +177,8 @@
     height: auto;
     padding: 3rem;
     display: flex;
-    align-items: center;
+    align-items: center;animation-name: drive;
+    animation-duration: 1s;
 }
 #slider1{
     display: none;
@@ -187,6 +194,8 @@
     padding: 3rem;
     display: flex;
     align-items: center;
+    animation-name: drive;
+    animation-duration: 1s;
 }
 #slider2{
     display: none;
