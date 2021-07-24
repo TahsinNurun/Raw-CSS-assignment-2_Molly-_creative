@@ -1,8 +1,8 @@
 // responsive hamburger menu code
 var menu = document.querySelector(".menu");
 var ham = document.querySelector(".ham");
-var xIcon = document.querySelector(".x_Icon");
-var menuIcon = document.querySelector(".menu_Icon");
+var xIcon = document.querySelector(".x_icon");
+var menuIcon = document.querySelector(".menu_icon");
 
 ham.addEventListener("click",toggleMenu);
 
@@ -72,20 +72,14 @@ function addMoreImg() {
     var newImg = document.createElement("img");
     var imgContainer = document.querySelector("#new_img");
     newImg.src = "Images/portfolioIMG4.png";
-    newImg.style.width = "30%";
-    newImg.style.height = "30%";
     newImg.classList.add("port_img");
 
     var newImg1 = document.createElement("img");
     newImg1.src = "Images/portfolioIMG5.png";
-    newImg1.style.width = "30%";
-    newImg1.style.height = "30%";
     newImg1.classList.add("port_img");
 
     var newImg2 = document.createElement("img");
     newImg2.src = "Images/portfolioIMG6.png";
-    newImg2.style.width = "30%";
-    newImg2.style.height = "30%";
     newImg2.classList.add("port_img");
 
     imgContainer.append(newImg, newImg1, newImg2);
@@ -98,8 +92,6 @@ function loadAllImage(x) {
     for (counter = 1; counter <= x; counter++) {
         var image = document.createElement("img");
         image.src = "Images/portfolioIMG" + counter + ".png";
-        image.style.width = "30%";
-        image.style.height = "30%";
         image.classList.add("port_img");
         div.appendChild(image);
     }
@@ -112,8 +104,6 @@ function loadThreeImage(x) {
     for (counter = x-2 ; counter <= x; counter++) {
         var image = document.createElement("img");
         image.src = "Images/portfolioIMG" + counter + ".png";
-        image.style.width = "30%";
-        image.style.height = "30%";
         image.classList.add("port_img");
         div.appendChild(image);
     }
